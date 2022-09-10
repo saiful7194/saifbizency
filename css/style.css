@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap; 
+}
+a{
+    text-decoration: none;
+}
+ul, 
+ol{
+    list-style: none;
+}
+.body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.align-center {
+    align-items: center;
+}
+:root{
+    --mainFont:'Ubuntu', sans-serif;
+    --secondaryFont:'Abril Fatface', cursive;
+    --thirdFont:'Open Sans', sans-serif;
+    --primarycolor: #0f2f44;
+    --secondaryColor: #ffc712;
+}
+/* common css ends heir */
+
+/* HEADER SECTION START  */
+header{
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 18px 0;
+}
+header .welcomeText,
+header .openingText{
+    width: 50%;
+}
+header .openingText{
+    text-align: right;
+}
+/* HEADER SECTION Ends */
+
+/* NAV  START HERE */
+nav .logo{
+    width: 30%;
+
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+} 
+nav .menu ul li a{
+    padding: 40px 19px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222222;
+
+}
+nav .menu ul li a:hover {
+    background-color: #fff9e6;
+    color: var(--secondaryColor)
+}
+nav .menu .search {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    border: 1px solid #ddd;
+    color: #999;
+    border-radius: 50%;
+}
+nav .menu .search:hover {
+    border-color: var(--secondaryColor);
+    color: var(--secondaryColor)
+}
+/* NAV  ENDS HERE */
+
